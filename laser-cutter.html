@@ -1,0 +1,170 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>        <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>        <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>LHS Laser Cutter Checklist</title>
+    <meta name="description" content="London Hackspace Laser Cutter Checklist">
+    <meta name="robots" content="NOODP">
+    
+    <meta name="description" content="London Hackspace Laser Cutter Checklist">
+    
+    <!--
+
+        This format is based on a stripped-down version of HTML5 Boilerplate from
+        http://html5boilerplate.com/
+
+        We also use modernizr (as does html5boilerplate), and google fonts, so that
+        we can standardise printing and layout
+        
+        
+        Fonts 
+        http://www.nasa.gov/centers/johnson/pdf/539922main_EVA_134_F_A.pdf
+
+    -->
+
+    <meta name="viewport" content="width=device-width">
+    <link href='http://fonts.googleapis.com/css?family=GFS+Didot|Capriola' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/html5bp.css">
+    <link rel="stylesheet" href="css/checklist.css">
+    <link rel="stylesheet" href="css/laser-cutter-checklist.css">
+    
+    <script src="js/modernizr-2.5.3.min.js"></script>
+</head>
+<body id='laser-cutter' class='checklist'>
+    <div role="main">
+
+        <div id='pg1' class='page-container'>
+
+            <h1 class='page-title'>Before you start</h1>
+            <ol class='general-information'>
+                <li>You need training before you can use the laser cutter</li>
+                <li>The wiki is at <a href='http://bit.ly/LHS-LC'>http://bit.ly/LHS-LC</a></li>
+                <li>Edit your file on your own computer, not on the laser cutter</li>
+                <li>Save your file in DXF format, or JPEG if engraving</li>
+                <li>Copy the file to the cutting machine via the network or by plugging in a USB device. See the wiki for details.</li>
+            </ol>
+
+            <h1 class='page-title'>Startup</h1>
+            <ol class='checklist'>
+                <li>Get key from it's safe location</li>
+                <li>Turn unit on using the key</li>
+                <li>Check laser unit powered on</li>
+                <li>Boot up the PC</li>
+                <li>Open the laser cutter lid</li>
+                <li>Check the following from left to right:
+                    <ol>
+                        <li>Water flowing in cooler</li>
+                        <li>Coolbot on (black box with LCD Display)</li>
+                        <li>Airflow working inside front-left of the lid</li>
+                        <li>CO2 fire extinguisher at your left foot</li>
+                    </ol>
+                </li>
+            </ol>
+        </div><!-- /pg1 -->
+
+
+        <!-- For the first page we don't need a page-break before the content, but subsequent ones do -->
+        <div id='pg2' class='page-container page-break'>
+            <h1 class='page-title'>Loading Files</h1>
+            <ol class='checklist'>
+                <li>Click on 'Lasercut' icon next to start menu</li>
+                <li>File &rarr; Import</li>
+                <li>Move drawing to top right of cutting area on screen</li>
+                <li>Scale the import by 0.98 (Is this necessary?)</li>
+                <li>Locate the cut and engrave power on the materials list</li>
+                <li>On the top right of the screen, set up properties <em>for each colour</em>:
+                    <ol>
+                        <li>Choose the mode (cut or engrave)</li>
+                        <li>Set the power</li>
+                        <li>Set the cut speed</li>
+                        <li>Set the corner power</li>
+                        <li>Correct order so that engraves are done before cuts by moving items up and down</li>
+                        <li>Correct order so that cuts which would cause material to shift happen last by moving items up and down</li>
+                    </ol>
+                </li>
+            </ol>
+
+            <h1 class='page-title'>Preparing for the burn</h1>
+            <ol class='checklist'>
+                <li>Coolbot and the laser must be on for at least 5 minutes before commencing the burn</li>
+                <li>Decide where focal point will need to be - top of material if engraving, bottom if cutting</li>
+                <li>Place material on the cutting bed, at top left, red dot indicates cutting position</li>
+                <li>Set height of cutting bed using "Up" and "Down" buttons on the laser unit keypad</li>
+            </ol>
+
+            <p><strong>Make sure you perform these steps after each change to the image!</strong></p>
+            <ol>
+                <li>In lasercut application:</li>
+                <li>Tool Menu &rarr; Set Knife Origin &rarr; Enter 299 / 559</li>
+                <li>Download Button &rarr; Download Current</li>
+                <li>Run 'Bounding Box Tool' to check cutter will not overrun your material</li>
+            </ol>
+
+        </div><!-- /pg2 -->
+        
+
+        <div id='pg3' class='page-container page-break'>
+            <h1 class='page-title'>Burning</h1>
+            <ol>
+                <li>Did you remember to:
+                    <ol>
+                        <li>Give coolbot 5 mins to cool the laser before you reached this point?</li>
+                        <li>Set the knife origin?</li>
+                        <li>Download the file to the cutter?</li>
+                        <li>Check that the laser won't run off your material with the bounding box tool?</li>
+                    </ol>
+                </li>
+                <li>Close lid</li>
+                <li>Check left to right:
+                    <ol>
+                        <li>Water flowing in cooler</li>
+                        <li>Coolbot (black box with LCD Display) On</li>
+                        <li>Airflow working inside front-left of the lid</li>
+                        <li>CO2 fire extinguisher at your left foot</li>
+                    </ol>
+                </li>
+                <li>Click 'Burn'</li>
+                <li>Wait for burn to complete, watching for fire</li>
+                <li>Monitor Coolbot temperature - if it reaches 25 degrees, hit pause on the cutter</li>
+                <li>Fill in the log book at <a href='http://bit.ly/LaserLogbookForm'>http://bit.ly/LaserLogbookForm</a></li>
+                <li>Memorise burn time from the cutter LCD</li>
+                <li>Put money in the usage box</li>
+            </ol>
+
+            <h1 class='page-title'>Shutdown</h1>
+            <ol>
+                <li>Leave the machine on, but not cutting, for a few minutes so that coolbot can cool the laser down</li>
+                <li>While you wait, clean up around you - vacuum the cutting bed if needs be</li>
+                <li>Close the lid</li>
+                <li>Turn off the key</li>
+                <li>Shut down the computer</li>
+                <li>Return the key to it's safe place</li>
+            </ol>
+        </div><!-- /pg3 -->
+        
+        <div id='pg4' class='page-container page-break'>
+            <h1 class='page-title'>Emergency / Fire</h1>
+            <ol id='emergency'>
+                <li>Hit <strong>STOP</strong> button</li>
+                <li>Shout for help</li>
+                <li>Fire extinguisher</li>
+                <li>Keep back</li>
+                <li><strong>then</strong> open lid and put out fire</li>
+            </ol>
+            <h2>After</h2>
+            <ol>
+                <li>Do not use the cutter, even if things seem ok. Residue on the mirrors will cause problems.</li>
+                <li>Log the problem in the online log book</li>
+                <li>Mark the machine as out of order, with a clear reason as to why</li>
+                <li>Contact the mailing list and Solexious (Charles Yarnold) or Hipster (Chris) and let them know what happened</li>
+            </ol>
+        </div><!-- /pg4 -->
+    </div><!-- main -->
+    <div class='metadata-container'>
+        Version: 0.01, 15 Sep 2012
+    </div>
+</body>
+</html>
